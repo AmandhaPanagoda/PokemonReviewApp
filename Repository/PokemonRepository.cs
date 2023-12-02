@@ -1,10 +1,11 @@
 ﻿using PokemonReviewApp.Data;
+using PokemonReviewApp.Interfaces;
 using PokemonReviewApp.Models;
 using System.Runtime.CompilerServices;
 
 namespace PokemonReviewApp.Repsitory
 {
-    public class PokemonRepository
+    public class PokemonRepository : IPokemonRepository
     {
         private readonly DataContext _context;
         public PokemonRepository(DataContext context) 
